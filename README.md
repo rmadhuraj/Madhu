@@ -110,6 +110,7 @@ $ sudo apt-get update
 $ sudo apt-get install gcc-arm-embedded
 ```
 (or) 
+
 Run the `setup.sh` script available in `scripts` directory to Install same tool chain
 ```bash
 $ cd scripts
