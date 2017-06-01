@@ -29,9 +29,9 @@ More information about Thread can be found on [threadgroup.org](http://threadgro
 [ot-appveyor-svg]: https://ci.appveyor.com/api/projects/status/r5qwyhn9p26nmfk3?svg=true
 [ot-codecov]: https://codecov.io/gh/openthread/openthread
 [ot-codecov-svg]: https://codecov.io/gh/openthread/openthread/branch/master/graph/badge.svg
-[ot-nordic-img]: doc/images/dw1000/nordic.png
-[ot-evb1000-img]: doc/images/dw1000/evb1000.png
-[ot-evb-nordic]: doc/images/evb-nordic.png
+[ot-nordic-img]: nordic.png
+[ot-evb1000-img]: evb1000.png
+[ot-evb-nordic]: evb-nordic.png
 [ot-mad]: nordic.png
 # Get started with OpenThread
 
@@ -90,15 +90,15 @@ OpenThread supports both system-on-chip (SoC) and network co-processor (NCP) des
 
 ### Connectors for SPI Interface on NRF52840 Nordic Platform to EVB1000
 
-[![OpenThread][ot-nordic-img]][ot-repo]
+[![Nordic][ot-nordic-img]][ot-repo]
 
 ### Connection Details of SPI Interface on NRF52840 Nordic Platform
 
-[![OpenThread][ot-evb1000-img]][ot-repo]
+[![EVB][ot-evb1000-img]][ot-repo]
 
 ### Connecting Nordic Hardware to EVM with SPI Interface
 
-[![OpenThread][ot-evb-nordic]][ot-repo]
+[![SPI][ot-evb-nordic]][ot-repo]
 
 ## Toolchain
 
