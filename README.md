@@ -29,9 +29,9 @@ More information about Thread can be found on [threadgroup.org](http://threadgro
 [ot-appveyor-svg]: https://ci.appveyor.com/api/projects/status/r5qwyhn9p26nmfk3?svg=true
 [ot-codecov]: https://codecov.io/gh/openthread/openthread
 [ot-codecov-svg]: https://codecov.io/gh/openthread/openthread/branch/master/graph/badge.svg
-[ot-nordic-img]: nordic.png
-[ot-evb1000-img]: evb1000.png
-[ot-evb-nordic]: evb-nordic.png
+[ot-nordic-img]: directory/nordic.png
+[ot-evb1000-img]: directory/evb1000.png
+[ot-evb-nordic]: directory/evb-nordic.png
 [ot-mad]: nordic.png
 # Get started with OpenThread
 
