@@ -1,4 +1,4 @@
-[![OpenThread][ot-logo]][ot-repo]  
+[![OpenThread][ot-mad]][ot-repo]  
 [![Build Status][ot-travis-svg]][ot-travis]
 [![Build Status][ot-appveyor-svg]][ot-appveyor]
 [![Coverage Status][ot-codecov-svg]][ot-codecov]
