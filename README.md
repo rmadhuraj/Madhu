@@ -21,7 +21,7 @@ OpenThread is...
 More information about Thread can be found on [threadgroup.org](http://threadgroup.org/).
 
 [thread]: http://threadgroup.org/technology/ourtechnology
-[ot-repo]: https://github.com/openthread/openthread
+[ot-repo]: https://github.com/rmadhuraj/Madhu
 [ot-logo]: doc/images/openthread_logo.png
 [ot-travis]: https://travis-ci.org/openthread/openthread
 [ot-travis-svg]: https://travis-ci.org/openthread/openthread.svg?branch=master
@@ -32,7 +32,7 @@ More information about Thread can be found on [threadgroup.org](http://threadgro
 [ot-nordic-img]: doc/images/dw1000/nordic.png
 [ot-evb1000-img]: doc/images/dw1000/evb1000.png
 [ot-evb-nordic]: doc/images/evb-nordic.png
-
+[ot-mad]: nordic.png
 # Get started with OpenThread
 
 <a href="https://codelabs.developers.google.com/codelabs/openthread-simulation/index.html">
