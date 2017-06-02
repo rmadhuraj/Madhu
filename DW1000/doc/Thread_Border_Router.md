@@ -117,8 +117,8 @@ The other connectivity option, which is also enabled by default, is support for 
 
 ## Testing:
 1. To test the Border Router, you can use another node with command line interface (CLI) and ping the Google DNS server 8.8.8.8.
-2. Flash the CLI Binary onto another Nordic kit connected with EVB1000 as per section 3.2.
-3. Start a terminal emulator like PuTTY/minicom/pyterm/  and connect to the used COM port with the settings described in section 4.1 (3).
+2. Flash the CLI Binary onto another Nordic kit connected with EVB1000.
+3. Start a terminal emulator like PuTTY/minicom/pyterm/  and connect to the used COM port with the settings described in CLI example
 
 4. Run the following commands: 
 ```bash
@@ -130,6 +130,7 @@ The other connectivity option, which is also enabled by default, is support for 
 	ping fd00:0064:0123:4567::0808:0808
 ```
 **Note:**
+
 0808:0808 is in fact the Google DNS server address "8.8.8.8" in hex representation. In that way, you can reach any IPv4 cloud by replacing last 32 bits of an IPv6 address with a correctly encoded IPv4 address.
 After running the command, you should receive the following result: 
 ```bash
