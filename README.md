@@ -46,6 +46,7 @@ OpenThread supports both system-on-chip (SoC) and network co-processor (NCP) des
 Download the suitable package from [SEGGER-JLink][SEGGER].
 
   [SEGGER]: https://www.segger.com/downloads/jlink
+  
 (or)
 
 For Ubuntu 64-bit sytem download [SEGGER-JLink-Ubuntu-64bit][SEGGER-64bit].
@@ -53,7 +54,9 @@ For Ubuntu 64-bit sytem download [SEGGER-JLink-Ubuntu-64bit][SEGGER-64bit].
   [SEGGER-64bit]: https://www.segger.com/downloads/jlink/JLink_Linux_V614h_x86_64.deb
 
 Install the package by double clicking it
+
 (or)
+
 Install the package through command line
 ```bash
 $ sudo dpkg -i JLink_Linux_V614h_x86_64.deb
@@ -61,7 +64,7 @@ $ sudo dpkg -i JLink_Linux_V614h_x86_64.deb
 
 # Get started with OpenThread
 
-# OpenThread on nRF52840-DW1000 Example
+# Open Thread with UWB Radio Abstraction Layer on EVB1000 Radio and Nordic NRF52840 platform
 ## Hardware setup
 The Hardware setup is explained in [Hardware_setup.md][HS].
 
@@ -148,7 +151,9 @@ $ nrfjprog -f nrf52 -r
     - 1 stop bit
     - No parity
     - HW flow control: RTS/CTS
-   (or) 
+    
+(or)
+
    Use Run the pyterm script provided in the `openthread-master/tools/pyterm` directory.
    On Linux system a port name should be called e.g. `/dev/ttyACM0` or `/dev/ttyACM1`.
 3. Open a terminal connection on the first board and start a new Thread network.
@@ -218,7 +223,8 @@ For a list of all available commands, visit [OpenThread CLI Reference README.md]
 
 [CLI]: https://github.com/openthread/openthread/blob/master/src/cli/README.md
 
-##Running the NCP example
+## Running the NCP example
+
 The NCP example is explained in [NCP_Example][NCP].
 
 [NCP]: ./DW1000/doc/NCP_Example.md
@@ -233,9 +239,9 @@ The Thread Border Router example is explained in [Thread_Border_Router][TBR].
 Observed that Discover Command displays network info all the channels instead of displaying for active channel.
 
 ### Known Limitations 
-ActiveScan have a limitation of displaying only one node information. During ActiveScan the node will broadcast a message to all the nodes and wait for responses. Since DW1000 doesn't support CSMA/CA if all the responses are arriving in same time, only one node data will be successfully received by the scan initiator node. 
+ActiveScan have a limitation of displaying only one node information. 
+* During ActiveScan the node will broadcast a message to all the nodes and wait for responses. Since DW1000 doesn't support     CSMA/CA if all the responses are arriving in same time, only one node data will be successfully received by the scan initiator node. 
 
 ## DOCUMENTATION
 * Userguide is available in DW1000/doc/PP_DecaWave_MAC_ReleaseNotes.pdf
 * ReleaseNote is available in DW1000/doc/PP_DecaWave_MAC_UserGuide.pdf
-* TestReport is available in DW1000/doc/PP_DecaWave_MAC_TestReport.xls
