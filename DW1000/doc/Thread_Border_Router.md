@@ -74,6 +74,7 @@ sudo apt-get install nmap
 Ifconfig
 ```
 ex: if the inet address is 192.168.1.165 then 192.168.1.0 is your network prefix
+   
    3. Now use this command , which lists all the IP addresses Present in your Network.
 ```bash 
 sudo nmap -sP 192.168.1.0/24
