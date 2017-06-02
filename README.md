@@ -44,10 +44,12 @@ OpenThread supports both system-on-chip (SoC) and network co-processor (NCP) des
 ### SEGGER-JLink:
 
 Download the suitable package from [SEGGER-JLink][SEGGER].
+
   [SEGGER]: https://www.segger.com/downloads/jlink
 (or)
 
 For Ubuntu 64-bit sytem download [SEGGER-JLink-Ubuntu-64bit][SEGGER-64bit].
+
   [SEGGER-64bit]: https://www.segger.com/downloads/jlink/JLink_Linux_V614h_x86_64.deb
 
 Install the package by double clicking it
