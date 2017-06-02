@@ -219,12 +219,12 @@ For a list of all available commands, visit [OpenThread CLI Reference README.md]
 ##Running the NCP example
 The NCP example is explained in [NCP_Example][NCP].
 
-[NCP]: https://github.com/Decawave/ot-dw1000/DW1000/docs/NCP_Example.md
+[NCP]: https://github.com/rmadhuraj/Madhu/DW1000/docs/NCP_Example.md
 
 ## Thread Border Router Example
 The Thread Border Router example is explained in [Thread_Border_Router][TBR].
 
-[TBR]: https://github.com/Decawave/ot-dw1000/DW1000/docs/Thread_Border_Router.md
+[TBR]: https://github.com/Decawave/rmadhuraj/Madhu/DW1000docs/Thread_Border_Router.md
 
 
 ### KNOWN ISSUES
