@@ -7,7 +7,8 @@ NCP is a low-power Wireless Network Co-Processor, can be a Border Router to conn
 ```bash
 sudo /usr/local/sbin/wpantund -o NCPSocketName /dev/ttyACM0 -o WPANInterfaceName wpan0
 ```
-    The above command will run the Wpantund Interface on the Linux PC with name wpan0 and initializes the NCP .
+The above command will run the Wpantund Interface on the Linux PC with name wpan0 and initializes the NCP.
+
 3. To configure the NCP ,wpantund provides “wpanctl” command line tool. To use it Open an another terminal and run the following command
 ```bash
 sudo wpanctl -I wpan0
