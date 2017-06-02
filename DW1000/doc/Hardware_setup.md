@@ -2,7 +2,7 @@
 #Hardware Setup
 This section gives how to bring up the Hardware to test Openthread. 
 
-(./images/evb-nordic.png)
+!(./images/evb-nordic.png)
 
 [dw-repo]: https://github.com/rmadhuraj/Madhu
 [nordic-img]: DW1000/doc/images/nordic.png
