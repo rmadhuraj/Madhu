@@ -224,7 +224,7 @@ The NCP example is explained in [NCP_Example][NCP].
 ## Thread Border Router Example
 The Thread Border Router example is explained in [Thread_Border_Router][TBR].
 
-[TBR]: https://github.com/Decawave/rmadhuraj/Madhu/DW1000/doc/Thread_Border_Router.md
+[TBR]: ./DW1000/doc/Thread_Border_Router.md
 
 
 ### KNOWN ISSUES
