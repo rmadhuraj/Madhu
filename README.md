@@ -235,13 +235,13 @@ The Thread Border Router example is explained in [Thread_Border_Router][TBR].
 [TBR]: ./DW1000/doc/Thread_Border_Router.md
 
 
-### KNOWN ISSUES
+### Known Issues
 Observed that Discover Command displays network info all the channels instead of displaying for active channel.
 
 ### Known Limitations 
 ActiveScan have a limitation of displaying only one node information. 
 * During ActiveScan the node will broadcast a message to all the nodes and wait for responses. Since DW1000 doesn't support     CSMA/CA if all the responses are arriving in same time, only one node data will be successfully received by the scan initiator node. 
 
-## DOCUMENTATION
+## Documentation
 * Userguide is available in DW1000/doc/PP_DecaWave_MAC_ReleaseNotes.pdf
 * ReleaseNote is available in DW1000/doc/PP_DecaWave_MAC_UserGuide.pdf
