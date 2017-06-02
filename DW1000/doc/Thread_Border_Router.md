@@ -50,7 +50,8 @@ sudo sync
 2. Connect the Raspberry Pi through an Ethernet cable to your switch/router that provides IPv4 or IPv6 connectivity with the DHCP or DHCPv6 service respectively
 3. Connect the microUSB power supply to the Raspberry Pi. The Border Router will start booting.
 
-![](./images/thread_border_setup.png)
+### SetUp Details of NCP Node with Raspberry pi Platform
+![Thread_Border_Router](./images/thread_border_setup.png)
 
 ## Thread Settings:
 The following are the default settings of the Border Router: 
