@@ -50,7 +50,9 @@ sudo sync
 2. Connect the Raspberry Pi through an Ethernet cable to your switch/router that provides IPv4 or IPv6 connectivity with the DHCP or DHCPv6 service respectively
 3. Connect the microUSB power supply to the Raspberry Pi. The Border Router will start booting.
 [![TBR][tbr-setup-img]][dw-repo]
-[dw-repo]: https://github.com/Decawave/ot-dw1000
+
+[dw-repo]: https://github.com/rmadhuraj/Madhu
+
 [tbr-setup-img]: DW1000/doc/images/dw1000/thread_border_setup.png
 
 ## Thread Settings:
