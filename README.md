@@ -63,7 +63,7 @@ $ sudo dpkg -i JLink_Linux_V614h_x86_64.deb
 ## Hardware setup
 The Hardware setup is explained in [Hardware_setup.md][HS].
 
-[HS]: https://github.com/rmadhuraj/Madhu/DW1000/doc/Hardware_setup.md
+[HS]: ./DW1000/doc/Hardware_setup.md
 
 ## Toolchain
 
@@ -219,7 +219,7 @@ For a list of all available commands, visit [OpenThread CLI Reference README.md]
 ##Running the NCP example
 The NCP example is explained in [NCP_Example][NCP].
 
-[NCP]: https://github.com/rmadhuraj/Madhu/DW1000/doc/NCP_Example.md
+[NCP]: ./DW1000/doc/NCP_Example.md
 
 ## Thread Border Router Example
 The Thread Border Router example is explained in [Thread_Border_Router][TBR].
