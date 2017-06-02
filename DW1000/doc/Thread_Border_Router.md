@@ -63,7 +63,7 @@ The following are the default settings of the Border Router:
 ```
 To customize the Thread settings, you must Log into the Border Router using SSH. 
 To Log into Raspberry Pi using SSH, requires its Ipv4 address.
-On your ububtu it is possible to find the IP address use the “nmap” command.
+On your ububtu it is possible to find the IP address use the `nmap` command.
    1. Install the `nmap` command using
 ```bash
 sudo apt-get install nmap
