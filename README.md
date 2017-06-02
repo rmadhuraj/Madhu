@@ -66,7 +66,7 @@ $ sudo dpkg -i JLink_Linux_V614h_x86_64.deb
 
 # Open Thread with UWB Radio Abstraction Layer on EVB1000 Radio and Nordic NRF52840 platform
 ## Hardware setup
-The Hardware setup is explained in [Hardware_setup.md][HS].
+The Connection details of the Hardware setup is explained in [Hardware_setup.md][HS].
 
 [HS]: ./DW1000/doc/Hardware_setup.md
 
