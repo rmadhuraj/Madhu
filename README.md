@@ -15,10 +15,10 @@ OpenThread is...
 More information about Thread can be found on [threadgroup.org](http://threadgroup.org/).
 
 [thread]: http://threadgroup.org/technology/ourtechnology
-[dw-repo]: https://github.com/Decawave/ot-dw1000
+[dw-repo]: https://github.com/rmadhuraj/Madhu
 [ot-logo]: DW1000/doc/images/openthread_logo.png
-[nordic-img]: DW1000/doc/images/dw1000/nordic.png
-[evb1000-img]: DW1000/doc/images/dw1000/evb1000.png
+[nordic-img]: DW1000/doc/images/nordic.png
+[evb1000-img]: DW1000/doc/images/evb1000.png
 [evb-nordic-img]: DW1000/doc/images/evb-nordic.png
 
 
