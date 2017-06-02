@@ -1,56 +1,6 @@
 # Working with Openthread NCP Appliction:
 NCP is a low-power Wireless Network Co-Processor, can be a Border Router to connect the thread network with the external network with Wpantund Interface Running on the host (Linux PC).
 
-## Installing Wpantund on the Ubuntu:
-wpantund is a user-space network interface driver/daemon that provides a native IPv6 network interface to a low-power wireless Network Co-Processor (or NCP).
-### Install Dependencies
-1.Open up a terminal and perform the following commands:
-```bash
-sudo apt-get update
-```
-
-2.Install runtine-dependent packages (libreadline is optional)
-```bash
-sudo apt-get install dbus libreadline
-```
-3.Install build-dependent packages (libreadline-dev is optional)
-```bash
-sudo apt-get install gcc g++ libdbus-1-dev libboost-dev libreadline-dev
-```
-
-### Download the Latest Wpantund source code from the Github
- 1. Go to https://github.com/openthread/wpantund/archive/master.zip
- 2. Unzip the package
-```bash
-unzip master.zip
-```
-Source Directory with Wpantund-master name will be Extracted.
- 3. Enter the directory
-```bash
-cd Wpantund-master
-```
-Build and Configure
- 4. Running the bootstrap script
-     Install Dependencies 
-```bash
-sudo apt-get install libtool autoconf autoconf-archive
-```
- 5. Bootstrap it
-```bash
-./bootstrap.sh
-```
- 6. Running the configure script
- ```bash
-./configure --sysconfdir=/etc
-make
-```
- 7. Install wpantund
-     Once the build above is complete, execute the following command:
-```bash
-sudo make install
-```
-     This will install wpantund onto computer.
-
 ## Running NCP with Wpantund
 1. Flash the NCP binary file on to the Nordic board and connect it to Linux PC via USB port.
 2. Open a Terminal and Run the following command
