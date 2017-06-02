@@ -15,23 +15,23 @@ This example is tested for nordic radio and also for decawave radio.
 
 ## Required software:
 * Terminal client with serial connection support, such as PuTTy/Tera term/ Minicom /Pyterm
-* Border Router Raspberry Pi image available from [nRF5 SDK for Thread web page](https://www.nordicsemi.com/eng/Products/nRF5-SDK-for-Thread/) in `downloads` section as `RaspPi_Thread_Border_Router_Demo_v0.9.0-1.alpha.img` 
+* Border Router Raspberry Pi image available from [nRF5 SDK for Thread ](https://www.nordicsemi.com/eng/Products/nRF5-SDK-for-Thread/) in `downloads` section as `RaspPi_Thread_Border_Router_Demo_v0.9.0-1.alpha.img` 
 * NCP firmware binary – arm-none-eabi-ot-ncp.hex 
 * CLI firmware binary – arm-none-eabi-ot-cli-ftd.hex 
 
 ## Setup procedure:
 Complete the following steps to set up the Border Router solution:
+
 1.Flashing the Raspberry Pi image to the microSD card
-  1.1 Download the Raspbian image for thread from the direct link [Rasbian_Image](https://www.nordicsemi.com/eng/nordic/download_resource/60502/12/57596032/118100)
-  1.2 Extract the package for Image file.
-  1.3 Insert the SD Card into the SD card adapter and plug the adapter into ubuntu PC.
-  1.4 Go to the command prompt and check the name given to sd card by using command
+* Download the Raspbian image for thread from the direct link [Rasbian_Image](https://www.nordicsemi.com/eng/nordic/download_resource/60502/12/57596032/118100)
+* Extract the package for Image file.
+* Insert the SD Card into the SD card adapter and plug the adapter into ubuntu PC.
+* Go to the command prompt and check the name given to sd card by using command
 ```bash	
 sudo fdisk -l
 ```
 it may be `/dev/sdb` or `/dev/sdc` or `/dev/sdd`  (varies from PC to PC)
-
-  1.5 Use the following command to copy the image on to the Raspberry Pi.
+* Use the following command to copy the image on to the Raspberry Pi.
 ```bash
 sudo dd if=<PATH to image>/2017-04-10-raspbian-jessie.img of=/dev/sdc bs=4M
 ```
@@ -40,20 +40,17 @@ ex:
 sudo dd if=~/Downloads/2017-04-10-raspbian-jessie.img of=/dev/sdc bs=4M
 sudo sync
 ```
-  1.6 Eject the SD card safely.
+* Eject the SD card safely.
 
 2.Insert the SD card into Raspberry Pi.
-3.Flash the NCP binary on to the Nordic Board connected with EVB1000 as per section 3.2.
+3.Flash the NCP binary on to the Nordic Board connected with EVB1000
 
 ## Starting the Border Router:
 1. Connect the NCP Node to the Raspberry Pi using micro USB CABLE as shown in the below set up figure.
 2. Connect the Raspberry Pi through an Ethernet cable to your switch/router that provides IPv4 or IPv6 connectivity with the DHCP or DHCPv6 service respectively
 3. Connect the microUSB power supply to the Raspberry Pi. The Border Router will start booting.
-[![TBR][tbr-setup-img]][dw-repo]
 
-[dw-repo]: https://github.com/rmadhuraj/Madhu
-
-[tbr-setup-img]: DW1000/doc/images/dw1000/thread_border_setup.png
+![](./images/thread_border_setup.png)
 
 ## Thread Settings:
 The following are the default settings of the Border Router: 
@@ -132,7 +129,8 @@ The other connectivity option, which is also enabled by default, is support for 
 	state
 	ping fd00:0064:0123:4567::0808:0808
 ```
-**Note:** 0808:0808 is in fact the Google DNS server address "8.8.8.8" in hex representation. In that way, you can reach any IPv4 cloud by replacing last 32 bits of an IPv6 address with a correctly encoded IPv4 address.
+**Note:** 
+0808:0808 is in fact the Google DNS server address "8.8.8.8" in hex representation. In that way, you can reach any IPv4 cloud by replacing last 32 bits of an IPv6 address with a correctly encoded IPv4 address.
 After running the command, you should receive the following result: 
 ```bash
 16 bytes from fd00:64:123:4567:0:0:808:808: icmp_seq=5 hlim=39 time=111ms
