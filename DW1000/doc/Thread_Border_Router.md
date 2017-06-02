@@ -42,8 +42,8 @@ sudo sync
 ```
 * Eject the SD card safely.
 
-2.Insert the SD card into Raspberry Pi.
-3.Flash the NCP binary on to the Nordic Board connected with EVB1000
+2. Insert the SD card into Raspberry Pi.
+3. Flash the NCP binary on to the Nordic Board connected with EVB1000
 
 ## Starting the Border Router:
 1. Connect the NCP Node to the Raspberry Pi using micro USB CABLE as shown in the below set up figure.
@@ -129,7 +129,7 @@ The other connectivity option, which is also enabled by default, is support for 
 	state
 	ping fd00:0064:0123:4567::0808:0808
 ```
-**Note:** 
+**Note:**
 0808:0808 is in fact the Google DNS server address "8.8.8.8" in hex representation. In that way, you can reach any IPv4 cloud by replacing last 32 bits of an IPv6 address with a correctly encoded IPv4 address.
 After running the command, you should receive the following result: 
 ```bash
