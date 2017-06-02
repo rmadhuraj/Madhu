@@ -1,4 +1,4 @@
-#Hardware Setup
+# Hardware Setup
 This section gives how to bring up the Hardware to test Openthread. 
 
 [![Decawave-Nordic][evb-nordic-img]][dw-repo]
