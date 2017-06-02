@@ -43,12 +43,12 @@ OpenThread supports both system-on-chip (SoC) and network co-processor (NCP) des
 ## Dependent tools to used for Nordic board
 ### SEGGER-JLink:
 
-Download the suitable package from [SEGGER-JLink][SEGGER-JLink].
-  [SEGGER-JLink]: https://www.segger.com/downloads/jlink
+Download the suitable package from [SEGGER-JLink][SEGGER].
+  [SEGGER]: https://www.segger.com/downloads/jlink
 (or)
 
-For Ubuntu 64-bit sytem download [SEGGER-JLink-Ubuntu-64bit][SEGGER-JLink-Ubuntu-64bit]
-  [SEGGER-JLink-Ubuntu-64bit]: https://www.segger.com/downloads/jlink/JLink_Linux_V614h_x86_64.deb
+For Ubuntu 64-bit sytem download [SEGGER-JLink-Ubuntu-64bit][SEGGER-64bit].
+  [SEGGER-64bit]: https://www.segger.com/downloads/jlink/JLink_Linux_V614h_x86_64.deb
 
 Install the package by double clicking it
 (or)
@@ -63,7 +63,7 @@ $ sudo dpkg -i JLink_Linux_V614h_x86_64.deb
 ## Hardware setup
 The Hardware setup is explained in [Hardware_setup.md][HS].
 
-[HS]: https://github.com/rmadhuraj/Madhu/DW1000/docs/Hardware_setup.md
+[HS]: https://github.com/rmadhuraj/Madhu/DW1000/doc/Hardware_setup.md
 
 ## Toolchain
 
@@ -219,12 +219,12 @@ For a list of all available commands, visit [OpenThread CLI Reference README.md]
 ##Running the NCP example
 The NCP example is explained in [NCP_Example][NCP].
 
-[NCP]: https://github.com/rmadhuraj/Madhu/DW1000/docs/NCP_Example.md
+[NCP]: https://github.com/rmadhuraj/Madhu/DW1000/doc/NCP_Example.md
 
 ## Thread Border Router Example
 The Thread Border Router example is explained in [Thread_Border_Router][TBR].
 
-[TBR]: https://github.com/Decawave/rmadhuraj/Madhu/DW1000docs/Thread_Border_Router.md
+[TBR]: https://github.com/Decawave/rmadhuraj/Madhu/DW1000/doc/Thread_Border_Router.md
 
 
 ### KNOWN ISSUES
