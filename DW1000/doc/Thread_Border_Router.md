@@ -63,7 +63,7 @@ The following are the default settings of the Border Router:
 	NAT64 Prefix: FD00:64:123:4567::/96
 ```
 To customize the Thread settings, you must Log into the Border Router using SSH. 
-To Log into Raspberry Pi using SSH, requires its Ipv4 address.
+To Log into Raspberry Pi using SSH, requires it's Ipv4 address.
 On your ububtu it is possible to find the IP address use the `nmap` command.
    1. Install the `nmap` command using
 ```bash
