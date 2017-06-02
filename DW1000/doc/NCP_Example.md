@@ -62,11 +62,11 @@ sudo /usr/local/sbin/wpantund -o NCPSocketName /dev/ttyACM0 -o WPANInterfaceName
 ```bash
 sudo wpanctl -I wpan0
 ```
-A command line to control/configure NCP appers as  “wpanctl:wpan0”
+A command line to control/configure NCP appers as  `wpanctl:wpan0`
 ```bash
 wpanctl:wpan0> 
 ```
-4.Now by following NCP commands , we can configure the NCP.  “help” command will list the available commands.
+4.Now by following NCP commands , we can configure the NCP.  `help` command will list the available commands.
 ```bash
 Wpanctl:wpan0>help 
 Commands: 
@@ -96,7 +96,7 @@ Commands:
    clear                         Clear shell. 
 wpanctl:wpan0>
 ```
-5. “status” command will display the status of the NCP.
+5. `status` command will display the status of the NCP.
 ```bash
 wpanctl:wpan0>status 
 wpan0 => [ 
@@ -111,20 +111,20 @@ wpan0 => [
 ## Making NCP as end device and CLI node as Leader:
 1. Start a CLI node in a seperate serial terminal (with suitable parameters,let's assume PANID=0xdeca, Channel 5 ), so it will become Leader of the newly formed network.
 
-2. To Join NCP Node to the above network , use “scan” and “Join” commands. On wpanctl
+2. To Join NCP Node to the above network , use `scan` and `Join` commands. On wpanctl
 ```bash
 wpanctl:wpan0> scan 
    | Joinable | NetworkName        | PAN ID | Ch | XPanID           | HWAddr           | RSSI 
 ---+----------+--------------------+--------+----+------------------+------------------+------ 
  1 |       NO | "OpenThread"       | 0xDECA | 5 | DEAD00BEEF00CAFE | AA9D0AFEC741A253 |  -67 
 ```
-3. Use “join” command with Network Id the with option 
+3. Use `join` command with Network Id the with option 
 ```bash
 wpanctl:wpan0> join 1 
 Joining "OpenThread" DEAD00BEEF00CAFE as node type "end-device" 
 Successfully Joined!
 ```
-4. Check the status.
+4. Check the `status`.
 ```bash
 wpanctl:wpan0> status 
 wpan0 => [ 
@@ -167,13 +167,13 @@ PING fd64:941b:1c5d:0:7c34:ca08:8028:352c(fd64:941b:1c5d:0:7c34:ca08:8028:352c) 
 ## Making NCP as Leader  and CLI node as end-device/Child:
 1. Start a NCP Node by flashing the NCP binary onto one evb-nordic setup.
 2. Open the wpanctl to confiure the NCP.
-3. By using “form” command , NCP can create a Network as a Leader
+3. By using `form` command , NCP can create a Network as a Leader
 ```bash
 wpanctl:wpan0> form Thread_Name
 Forming WPAN "Thread_Name" as node type "router" 
 Successfully formed! 
 ```
-4. Now check the status.
+4. Now check the `status`.
 ```bash
 wpanctl:wpan0> status 
 wpan0 => [ 
@@ -195,13 +195,13 @@ wpan0 => [
 ] 
 wpanctl:wpan0>
 ```
-5. "getprop" will list all the parameters of the NCP Node.
+5. `getprop` will list all the parameters of the NCP Node.
 ```bash
 wpanctl:wpan0>getprop
 ```
 6. Now Run a CLI node in second board with the same parameters observed on the NCP (Panid , channel , Masterkey),.
-7. Soon , CLI node will join the Network as a child. It can be ensured by using “state” command and “parent” commands on the CLI Node.
-8. It is Possible to ping with the MeshLocalAddress of NCP from the CLI node using “ping” command.
+7. Soon , CLI node will join the Network as a child. It can be ensured by using `state` command and `parent` commands on the CLI Node.
+8. It is Possible to ping with the MeshLocalAddress of NCP from the CLI node using `ping` command.
  On CLI Node  run this command
 
 ```bash
