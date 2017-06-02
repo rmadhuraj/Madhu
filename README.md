@@ -63,7 +63,7 @@ $ sudo dpkg -i JLink_Linux_V614h_x86_64.deb
 ## Hardware setup
 The Hardware setup is explained in [Hardware_setup.md][HS].
 
-[HS]: https://github.com/Decawave/ot-dw1000/DW1000/docs/Hardware_setup.md
+[HS]: https://github.com/rmadhuraj/Madhu/DW1000/docs/Hardware_setup.md
 
 ## Toolchain
 
