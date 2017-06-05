@@ -78,7 +78,8 @@ Installing Dependent Libraries only for one time with `./setup.sh INITIAL`
 $ cd ot-dw1000
 $ sudo ./setup.sh INITIAL
 ```
-Setup without installing Dependent Libraries (For Next Time on Wards)
+Setup without installing Dependent Libraries (For the next time onwards).
+
 Run the `setup.sh` without any arguments  – `./setup.sh`
 
 ```bash
