@@ -13,7 +13,7 @@ The above command will run the Wpantund Interface on the Linux PC with name wpan
 ```bash
 sudo wpanctl -I wpan0
 ```
-A command line to control/configure NCP appers as  `wpanctl:wpan0`
+A command line to control/configure NCP appears as  `wpanctl:wpan0`
 ```bash
 wpanctl:wpan0> 
 ```
@@ -116,7 +116,7 @@ PING fd64:941b:1c5d:0:7c34:ca08:8028:352c(fd64:941b:1c5d:0:7c34:ca08:8028:352c) 
 .
 ```
 ## Making NCP as Leader  and CLI node as end-device/Child:
-1. Start a NCP Node by flashing the NCP binary onto one evb-nordic setup.
+1. Start a NCP Node by flashing the NCP binary onto one Nordic board.
 2. Open the wpanctl to confiure the NCP.
 3. By using `form` command , NCP can create a Network as a Leader
 ```bash
@@ -150,7 +150,7 @@ wpanctl:wpan0>
 ```bash
 wpanctl:wpan0>getprop
 ```
-6. Now Run a CLI node in second board with the same parameters observed on the NCP (Panid , channel , Masterkey),.
+6. Now Run a CLI node in second board with the same parameters observed on the NCP (Panid , channel , Masterkey).
 7. Soon , CLI node will join the Network as a child. It can be ensured by using `state` command and `parent` commands on the CLI Node.
 8. It is Possible to ping with the MeshLocalAddress of NCP from the CLI node using `ping` command.
  On CLI Node  run this command
