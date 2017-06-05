@@ -70,51 +70,55 @@ The Connection details of the Hardware setup is explained in [Hardware_setup.md]
 
 [HS]: ./DW1000/doc/Hardware_setup.md
 
-## Toolchain
-All the necessary tools will be installed by running the script file `setup.sh` provided in the cloned Repo.
-
-Installing Dependent Libraries only for one time with `./setup.sh INITIAL`
+## Installing Tool chain and Building Openthread Applications.
+### Option 1
+* To initialize the Environment Variables, installing Dependent Libraries (**First time**), setup(clone the OT repo and sym link creation for dw1000) and building the application
+Inside the cloned repo,run the script – `build_setup.sh INITIAL`
 ```bash
 $ cd ot-dw1000
-$ sudo ./setup.sh INITIAL
+$ ./build_setup.sh INITIAL
 ```
-Setup without installing Dependent Libraries (For the next time onwards).
-
-Run the `setup.sh` without any arguments  – `./setup.sh`
+* To initialize the Environment Variables, setup(clone the OT repo and sym link creation for dw1000) and building the application (**Next Time on Wards**).
+* Inside the cloned repo,run the script – `build_setup.sh Update`
+```bash
+$ cd ot-dw1000
+$ ./build_setup.sh Update
+```
+* To build the OT CLI and NCP application
+Inside the cloned repo run the script – `./build_setup.sh`
 
 ```bash
 $ cd ot-dw1000
-$ sudo ./setup.sh
+$ ./build_setup.sh
 ```
-## Building the examples
-### option 1
-* Run the following commands on a terminal
+
+### Option 2
+* Initialize the Environment Variables.
+Inside the cloned repo,run the script – `source setenv.sh`
 ```bash
-$ cd ot-dw1000/openthread-master
-$ ./bootstrap
-$ make -f examples/Makefile-nrf52840-dw1000
+$ cd ot-dw1000
+$ source setenv.sh
 ```
 
-* Converting into Hex format
-After a successful build, the `elf` files can be found in
-`<path-to-openthread-master>/output/bin`.  You can convert them to `hex`
-files using `arm-none-eabi-objcopy`:
-
+* Installing Dependent Libraries (**only for one time**).
+Inside the cloned repo run the script - `./setup.sh INITIAL`
 ```bash
-$ cd output/bin
-$ arm-none-eabi-objcopy -O ihex arm-none-eabi-ot-cli-ftd arm-none-eabi-ot-cli-ftd.hex
-$ arm-none-eabi-objcopy -O ihex arm-none-eabi-ot-ncp arm-none-eabi-ot-ncp.hex
+$ cd ot-dw1000
+$ ./build_setup.sh INITIAL
 ```
-(or)
+* Setup (clone the OT repo and sym link creation for dw1000) without installing Dependent Libraries (**Next Time on Wards**).
 
-### option 2
-Run the `build.sh` script available in `scripts` directory, which will build and convert the output binaries.
-
+ Inside the cloned repo run the script – `setup.sh UPDATE`
 ```bash
-$ cd ot-dw1000/openthread-master/scripts
-$ ./build.sh
+$ cd ot-dw1000
+$ ./setup.sh UPDATE
 ```
-
+* Build the OT CLI and NCP application.
+Inside the cloned repo run the script – `./build_setup.sh `
+```bash
+$ cd ot-dw1000
+$ ./build_setup.sh
+```
 ## Flashing the binaries
 Use Command line tools for flashing binary on to nrf52840.
 In the previous steps `setup.sh` would have installed the command line tools `nrfjprog`.
