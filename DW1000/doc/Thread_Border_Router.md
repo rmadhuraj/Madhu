@@ -111,8 +111,10 @@ nfc_commissioner_enable=true
 
 ## Connectivity:
 NAT64 technology is enabled by default. It is used to enable communication between the IPv6-only Thread network with pure IPv4 LAN network that the Border Router connects to, as is the case in most applications. In that way, Thread nodes are able to connect to IPv4 cloud services. Thread devices will receive a NAT64-prefix and use it to create their own Unique Local Address.
+
 The other connectivity option, which is also enabled by default, is support for the native IPv6 connection. It uses built-in DHCPv6 client on the Border Router which is able to receive prefixes from the Ethernet interface. If the received prefix is shorter than 63 bits, the 64-bit long subnet prefix is created and forwarded to the Thread network. In such situation, devices create one more address based on the forwarded prefix, which, unlike in a pure NAT64 solution, allows them to be reached from the Internet.
- Note: When dealing with native IPv6 connectivity, make sure you use the DHCPv6 service, and not the popular Stateless Address Autoconfiguration (SLAAC) tool. This autoconfig tool will only provide a 64-bit long prefix that is not sufficient to delegate a new 64-bit long prefix for the Thread network.
+
+**Note:** When dealing with native IPv6 connectivity, make sure you use the DHCPv6 service, and not the popular Stateless Address Autoconfiguration (SLAAC) tool. This autoconfig tool will only provide a 64-bit long prefix that is not sufficient to delegate a new 64-bit long prefix for the Thread network.
   Support for Domain Name System (DNS) resolution is also available. This mechanism is used to translate a host name into a corresponding IP address. It can be used either for translating a domain name into its native IPv6 or for obtaining its IPv4 address and returning IPv6 translated with the DNS64 mechanism.
 
 
