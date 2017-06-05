@@ -72,6 +72,15 @@ The Connection details of the Hardware setup is explained in [Hardware_setup.md]
 
 ## Toolchain
 All the necessary tools will be installed by running the script file `setup.sh` provided in the cloned Repo.
+
+Installing Dependent Libraries only for one time with `./setup.sh INITIAL`
+```bash
+$ cd ot-dw1000
+$ sudo ./setup.sh INITIAL
+```
+Setup without installing Dependent Libraries (For Next Time on Wards)
+Run the `setup.sh` without any arguments  – `./setup.sh`
+
 ```bash
 $ cd ot-dw1000
 $ sudo ./setup.sh
@@ -104,7 +113,6 @@ Run the `build.sh` script available in `scripts` directory, which will build and
 $ cd ot-dw1000/openthread-master/scripts
 $ ./build.sh
 ```
-
 
 ## Flashing the binaries
 Use Command line tools for flashing binary on to nrf52840.
