@@ -96,7 +96,7 @@ $ ./build_setup.sh
 Use Command line tools for flashing binary on to nrf52840.
 In the previous steps `setup.sh` would have installed the command line tools `nrfjprog`.
 ```bash
-$ cd ot-dw1000/openthread-master/nrfjprog
+$ cd ot-dw1000/OT_ROOT/nrfjprog
 $ sudo ./nrfjprog -f nrf52 --chiperase --program ../output/bin/arm-none-eabi-ot-cli-ftd.hex
 $ sudo ./nrfjprog -f nrf52 -r
 ```
@@ -114,13 +114,13 @@ $ sudo ./nrfjprog -f nrf52 -r
     
 (or)
 
-   Use Run the pyterm script provided in the `ot-dw1000/openthread-master/tools/pyterm` directory.
+   Use Run the pyterm script provided in the `ot-dw1000/OT_ROOT/tools/pyterm` directory.
    On Linux system a port name should be called e.g. `/dev/ttyACM0` or `/dev/ttyACM1`.
 
 3. Open a terminal connection on the first board and start a new Thread network.
 
  ```bash 
-$ cd ot-dw1000/openthread-master/tools/pyterm
+$ cd ot-dw1000/OT_ROOT/tools/pyterm
 $ sudo ./pyterm -p /dev/ttyACM0
   
  > channel 5
@@ -143,7 +143,7 @@ $ sudo ./pyterm -p /dev/ttyACM0
 5. Open a terminal connection on the second board and attach a node to the network.
 
  ```bash
-$ cd ot-dw1000/openthread-master/tools/pyterm
+$ cd ot-dw1000/OT_ROOT/tools/pyterm
 $ sudo ./pyterm -p /dev/ttyACM1
 
  > channel 5
