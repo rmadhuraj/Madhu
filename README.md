@@ -71,48 +71,22 @@ The Connection details of the Hardware setup is explained in [Hardware_setup.md]
 [HS]: ./DW1000/doc/Hardware_setup.md
 
 ## Toolchain
-
-Install the GNU ARM Embedded Toolchain
-
+All the Necessary Tools will installed by running the script file `setup.sh` provided in the cloned Repo.
 ```bash
-$ sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
-$ sudo apt-get update
-$ sudo apt-get install gcc-arm-embedded
-```
-(or) 
-
-Run the `setup.sh` script available in `scripts` directory to Install same tool chain
-```bash
-$ cd scripts
-$ sudo chmod 0777 setup.sh
+$ cd ot-dw1000
 $ sudo ./setup.sh
+`
 ```
 ## Building the examples
-### 1. The some of source files need executable permissions
- ```bash
-$ cd <path-to-openthread-master>
-$ cd scripts
-$ sudo chmod a+x permissions.sh build.sh
-$ ./permissions.sh
-```
-
-### 2. Start compiling
+### option 1
+* Run the following commands on a terminal
 ```bash
-$ cd <path-to-openthread-master>
+$ cd ot-dw1000/openthread-master
+$ ./bootstrap
 $ make -f examples/Makefile-nrf52840-dw1000
 ```
-(or)
 
-Run the `build.sh` script available in `scripts` directory
-
-```bash
-$ cd <path-to-openthread-master>
-$ cd scripts
-$ sudo chmod a+x build.sh
-$ ./build.sh
-```
-
-### 3. Converting into Hex format
+* Converting into Hex format
 After a successful build, the `elf` files can be found in
 `<path-to-openthread-master>/output/bin`.  You can convert them to `hex`
 files using `arm-none-eabi-objcopy`:
@@ -122,23 +96,24 @@ $ cd output/bin
 $ arm-none-eabi-objcopy -O ihex arm-none-eabi-ot-cli-ftd arm-none-eabi-ot-cli-ftd.hex
 $ arm-none-eabi-objcopy -O ihex arm-none-eabi-ot-ncp arm-none-eabi-ot-ncp.hex
 ```
+(or)
 
-## Flashing the binaries
-Install the SEGGER-JLink and Command line tools for flashing binary on to nrf52840
-### Command line tools
-Flash the compiled binaries onto nRF52840 using `nrfjprog` which is
-part of the [nRF5x Command Line Tools][nRF5x-Command-Line-Tools].
-
-[nRF5x-Command-Line-Tools]: https://www.nordicsemi.com/eng/Products/nRF52840#Downloads
-
-Download the suitable package. For Ubuntu 64 bit system choose "nRF5x-Command-Line-Tools-Linux64" package from [nRF5x Command Line Tools][nRF5x-Command-Line-Tools].
-Extract the tools preferably inside the openthread-master directory which is conveninent to flash.
+### option 2
+Run the `build.sh` script available in `scripts` directory, which will build and convert the output binaries.
 
 ```bash
-$ tar -xvf nRF5x-Command-Line-Tools_9_3_1_Linux-x86_64.tar
-$ cd nrfjprog
-$ nrfjprog -f nrf52 --chiperase --program ../output/nrf52840/bin/ot-cli-ftd.hex
-$ nrfjprog -f nrf52 -r
+$ cd ot-dw1000/openthread-master/scripts
+$ ./build.sh
+```
+
+
+## Flashing the binaries
+Use Command line tools for flashing binary on to nrf52840
+In the previous steps `setup.sh` would have installed the command line tools `nrfjprog`.
+```bash
+$ cd ot-dw1000/openthread/nrfjprog
+$ sudo ./nrfjprog -f nrf52 --chiperase --program ../output/bin/arm-none-eabi-ot-cli-ftd.hex
+$ sudo ./nrfjprog -f nrf52 -r
 ```
 
 ## Running the CLI example
