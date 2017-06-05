@@ -75,7 +75,6 @@ All the necessary tools will be installed by running the script file `setup.sh` 
 ```bash
 $ cd ot-dw1000
 $ sudo ./setup.sh
-`
 ```
 ## Building the examples
 ### option 1
@@ -129,7 +128,7 @@ $ sudo ./nrfjprog -f nrf52 -r
     
 (or)
 
-   Use Run the pyterm script provided in the `openthread-master/tools/pyterm` directory.
+   Use Run the pyterm script provided in the `ot-dw1000/openthread-master/tools/pyterm` directory.
    On Linux system a port name should be called e.g. `/dev/ttyACM0` or `/dev/ttyACM1`.
 3. Open a terminal connection on the first board and start a new Thread network.
 
