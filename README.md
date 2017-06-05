@@ -43,7 +43,7 @@ OpenThread supports both system-on-chip (SoC) and network co-processor (NCP) des
 ## Dependent tools to used for Nordic board
 ### SEGGER-JLink:
 
-Download the suitable package from [SEGGER-JLink][SEGGER].
+1.Download the suitable package from [SEGGER-JLink][SEGGER].
 
   [SEGGER]: https://www.segger.com/downloads/jlink
   
@@ -53,7 +53,7 @@ For Ubuntu 64-bit sytem download [SEGGER-JLink-Ubuntu-64bit][SEGGER-64bit].
 
   [SEGGER-64bit]: https://www.segger.com/downloads/jlink/JLink_Linux_V614h_x86_64.deb
 
-Install the package by double clicking it
+2.Install the package by double clicking it
 
 (or)
 
