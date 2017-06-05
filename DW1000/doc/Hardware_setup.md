@@ -1,6 +1,10 @@
 
 # Hardware Setup
 This section explains how to connect the Nordic Hardware Platform to EVB1000 through SPI interface. 
+* Turn off S2 DIP switches
+* Turn off S3-1 DIP switch
+* Remove the jumper J10
+Make sure the pins of nRF52840 PDK and EVB1000 Device are blue wired as defined below
 
 ## Interfacing EVB1000 with Nordic nRF52840 pdk
  |PIN|EVB1000|NRF52840|
