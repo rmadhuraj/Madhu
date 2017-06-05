@@ -88,7 +88,7 @@ $ ./build_setup.sh Update
 ```
 * To build the OT CLI and NCP application.
 
-Inside the cloned repo run the script – `./build_setup.sh`
+Inside the cloned repo run the script – `build_setup.sh`
 
 ```bash
 $ cd ot-dw1000
@@ -109,7 +109,7 @@ $ source setenv.sh
 Inside the cloned repo run the script - `./setup.sh INITIAL`
 ```bash
 $ cd ot-dw1000
-$ ./build_setup.sh INITIAL
+$ setup.sh INITIAL
 ```
 * Setup (clone the OT repo and sym link creation for dw1000) without installing Dependent Libraries (**Next Time on Wards**).
 
