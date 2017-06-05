@@ -71,60 +71,27 @@ The Connection details of the Hardware setup is explained in [Hardware_setup.md]
 [HS]: ./DW1000/doc/Hardware_setup.md
 
 ## Installing Tool chain and Building Openthread Applications.
-### Option 1
-* To initialize the Environment Variables, installing Dependent Libraries (**First time**), setup(clone the OT repo and sym link creation for dw1000) and building the application.
 
-Inside the cloned repo,run the script – `build_setup.sh INITIAL`
+1.To initialize the Environment Variables, installing Dependent Libraries (**First time**), setup(clone the OT repo and sym link creation for dw1000) and building the application.
+
+Inside the cloned repo (ot-dw1000) run the script – `build_setup.sh INITIAL`
 ```bash
-$ cd ot-dw1000
 $ ./build_setup.sh INITIAL
 ```
-* To initialize the Environment Variables, setup(clone the OT repo and sym link creation for dw1000) and building the application (**Next Time on Wards**).
+2.To initialize the Environment Variables, setup(clone the OT repo and sym link creation for dw1000) and building the application (**Next Time on Wards**).
 
-Inside the cloned repo,run the script – `build_setup.sh Update`
+Inside the cloned repo (ot-dw1000) run the script – `build_setup.sh Update`
 ```bash
-$ cd ot-dw1000
-$ ./build_setup.sh Update
+$ ./build_setup.sh UPDATE
 ```
-* To build the OT CLI and NCP application.
+3.To build the OT CLI and NCP application.
 
-Inside the cloned repo run the script – `build_setup.sh`
+Inside the cloned repo (ot-dw1000) run the script – `build_setup.sh`
 
 ```bash
-$ cd ot-dw1000
 $ ./build_setup.sh
 ```
 
-### Option 2
-* Initialize the Environment Variables.
-
-Inside the cloned repo,run the script – `source setenv.sh`
-```bash
-$ cd ot-dw1000
-$ source setenv.sh
-```
-
-* Installing Dependent Libraries (**only for one time**).
-
-Inside the cloned repo run the script - `./setup.sh INITIAL`
-```bash
-$ cd ot-dw1000
-$ setup.sh INITIAL
-```
-* Setup (clone the OT repo and sym link creation for dw1000) without installing Dependent Libraries (**Next Time on Wards**).
-
-Inside the cloned repo run the script – `setup.sh UPDATE`
-```bash
-$ cd ot-dw1000
-$ ./setup.sh UPDATE
-```
-* Build the OT CLI and NCP application.
-
-Inside the cloned repo run the script – `./build_setup.sh `
-```bash
-$ cd ot-dw1000
-$ ./build_setup.sh
-```
 ## Flashing the binaries
 Use Command line tools for flashing binary on to nrf52840.
 In the previous steps `setup.sh` would have installed the command line tools `nrfjprog`.
