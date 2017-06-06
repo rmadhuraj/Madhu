@@ -15,7 +15,7 @@ OpenThread is...
 More information about Thread can be found on [threadgroup.org](http://threadgroup.org/).
 
 [thread]: http://threadgroup.org/technology/ourtechnology
-[dw-repo]: https://github.com/rmadhuraj/Madhu
+[dw-repo]: https://github.com/Decawave/ot-dw1000
 [ot-logo]: DW1000/doc/images/openthread_logo.png
 [nordic-img]: DW1000/doc/images/nordic.png
 [evb1000-img]: DW1000/doc/images/evb1000.png
@@ -76,28 +76,29 @@ The Connection details of the Hardware setup is explained in [Hardware_setup.md]
 
 Inside the cloned repo (ot-dw1000) run the script – `build_setup.sh INITIAL`
 ```bash
-$ ./build_setup.sh INITIAL
+$ source ./build_setup.sh INITIAL
 ```
 2.To initialize the Environment Variables, setup(clone the OT repo and sym link creation for dw1000) and building the application (**Next Time on Wards**).
 
 Inside the cloned repo (ot-dw1000) run the script – `build_setup.sh Update`
 ```bash
-$ ./build_setup.sh UPDATE
+$ source ./build_setup.sh UPDATE
 ```
 3.To build the OT CLI and NCP application.
 
 Inside the cloned repo (ot-dw1000) run the script – `build_setup.sh`
 
 ```bash
-$ ./build_setup.sh
+$ source ./build_setup.sh
 ```
+
 
 ## Flashing the binaries
 Use Command line tools for flashing binary on to nrf52840.
 In the previous steps `setup.sh` would have installed the command line tools `nrfjprog`.
 ```bash
-$ cd ot-dw1000/OT_ROOT/nrfjprog
-$ sudo ./nrfjprog -f nrf52 --chiperase --program ../output/bin/arm-none-eabi-ot-cli-ftd.hex
+$ cd $OT_ROOT/nrfjprog
+$ sudo ./nrfjprog -f nrf52 --chiperase --program $OT_ROOT/output/bin/arm-none-eabi-ot-cli-ftd.hex
 $ sudo ./nrfjprog -f nrf52 -r
 ```
 
@@ -114,13 +115,13 @@ $ sudo ./nrfjprog -f nrf52 -r
     
 (or)
 
-   Use Run the pyterm script provided in the `ot-dw1000/OT_ROOT/tools/pyterm` directory.
+   Use Run the pyterm script provided in the `ot-dw1000/openthread-master/tools/pyterm` directory.
    On Linux system a port name should be called e.g. `/dev/ttyACM0` or `/dev/ttyACM1`.
 
 3. Open a terminal connection on the first board and start a new Thread network.
 
  ```bash 
-$ cd ot-dw1000/OT_ROOT/tools/pyterm
+$ cd $OT_ROOT/tools/pyterm
 $ sudo ./pyterm -p /dev/ttyACM0
   
  > channel 5
@@ -143,7 +144,7 @@ $ sudo ./pyterm -p /dev/ttyACM0
 5. Open a terminal connection on the second board and attach a node to the network.
 
  ```bash
-$ cd ot-dw1000/OT_ROOT/tools/pyterm
+$ cd $OT_ROOT/tools/pyterm
 $ sudo ./pyterm -p /dev/ttyACM1
 
  > channel 5
