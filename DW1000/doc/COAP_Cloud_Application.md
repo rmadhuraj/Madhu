@@ -42,12 +42,12 @@ dwcoapsend 45
 ```
 ## 4. Create a Widget on the web Interface to monitor the interger values
 Go to the Dashboard page.
-        * Optionally, remove all temporary created widgets by clicking Edit Dashboard.
-        * Click Add Widget (+). 
-        * Fill in the name of the widget, for example Temperature, choose Thing Resource as a Data Source, and temp as a Resource.
-        * Use Gauge as Widget Type and check the Realtime check box.
-        * Optionally, you may also fill in the ranges ,units, for example Celsius.
-        * You can observe the the Guage widget with Temparature value as 45.
+       * Optionally, remove all temporary created widgets by clicking Edit Dashboard.
+       * Click Add Widget (+). 
+       * Fill in the name of the widget, for example Temperature, choose Thing Resource as a Data Source, and temp as a Resource.
+       * Use Gauge as Widget Type and check the Realtime check box.
+       * Optionally, you may also fill in the ranges ,units, for example Celsius.
+       * You can observe the the Guage widget with Temparature value as 45.
 ## 5. Testing:
 Now, from the CLI node by continously using dwcoapsend command you can observe the changes on the web interface .
 ```bash
