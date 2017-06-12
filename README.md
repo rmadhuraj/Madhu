@@ -196,6 +196,10 @@ The Thread Border Router example is explained in [Thread_Border_Router][TBR].
 
 [TBR]: ./DW1000/doc/Thread_Border_Router.md
 
+The COAP based Cloud application is explained in [COAP_CLOUD_APPLICATION][CCA].
+
+[CCA]: ./DW1000/doc/COAP_Cloud_Application.md
+
 
 ### Known Issues
 * Observed that Discover Command displays network info all the channels instead of displaying for active channel.
