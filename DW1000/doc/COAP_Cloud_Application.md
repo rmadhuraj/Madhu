@@ -22,23 +22,31 @@ For a detailed description of the sign-up procedure and an introduction to the w
 ## 3. Add the token in the CLI source code and recompile the code.
 
 **Note:** The Token must be copied into the CLI application source code. i.e., The value can be found in the header of the file coap_api.cpp represented as the CLOUD_URI_PATH define. This file located in openthread-master/src/core/api/ directory. Replace Thing Token ({THING_TOKEN} string) with the appropriate one, obtained in the process of Cloud setup.
-         	 #define CLOUD_URI_PATH            "v2/things/{THING_TOKEN}"
 
-	EX:#define CLOUD_URI_PATH            "v2/things/DFdOKr5AHo_7Aj-L7UNnIO4BSunTvQeaJSgCWILuYA0"
-
-	1. After replacing the token, recompile the code with enabling coap support in the source code.
-			COAP=1 ENABLE_DW1000=1 make -f examples/Makefile-nrf52840-dw1000
-	2. Flash the CLI on one node and NCP on another node and connect to the Raspberry Pi as mentioned 		in 4.3 section and start the thread border router setup. 
-	3. On cli node by using dwcoapsend command Push the first integer value to the cloud
-			dwcoapsend 45
+```bash
+ #define CLOUD_URI_PATH            "v2/things/{THING_TOKEN}"
+```
+**EX:**
+```bash
+ #define CLOUD_URI_PATH            "v2/things/DFdOKr5AHo_7Aj-L7UNnIO4BSunTvQeaJSgCWILuYA0"
+```
+ * After replacing the token, recompile the code with enabling coap support in the source code.
+```bash
+COAP=1 ENABLE_DW1000=1 make -f examples/Makefile-nrf52840-dw1000
+```
+ * Flash the CLI on one node and NCP on another node and connect to the Raspberry Pi as mentioned in the `Thread_Border_Router` setup. 
+ * On cli node by using dwcoapsend command Push the first integer value to the cloud
+```bash
+dwcoapsend 45
+```
 ## 4. Create a Widget on the web Interface to monitor the interger values
 Go to the Dashboard page.
-	1. Optionally, remove all temporary created widgets by clicking Edit Dashboard.
-	2.Click Add Widget (+). 
-	3. Fill in the name of the widget, for example Temperature, choose Thing Resource as a Data 		Source, and temp as a Resource.
-	4. Use Gauge as Widget Type and check the Realtime check box.
-	5. Optionally, you may also fill in the ranges ,units, for example Celsius.
-	6. You can observe the the Guage widget with Temparature value as 45.
+        * Optionally, remove all temporary created widgets by clicking Edit Dashboard.
+        * Click Add Widget (+). 
+        * Fill in the name of the widget, for example Temperature, choose Thing Resource as a Data Source, and temp as a Resource.
+        * Use Gauge as Widget Type and check the Realtime check box.
+        * Optionally, you may also fill in the ranges ,units, for example Celsius.
+        * You can observe the the Guage widget with Temparature value as 45.
 ## 5. Testing:
 Now, from the CLI node by continously using dwcoapsend command you can observe the changes on the web interface .
 ```bash
