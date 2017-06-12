@@ -34,7 +34,8 @@ For a detailed description of the sign-up procedure and an introduction to the w
 ```bash
 COAP=1 ENABLE_DW1000=1 make -f examples/Makefile-nrf52840-dw1000
 ```
- * Flash the CLI on one node and NCP on another node and connect to the Raspberry Pi as mentioned in the `Thread_Border_Router` setup. 
+ * Flash the CLI on one node and NCP on another node and connect to the Raspberry Pi as mentioned in the `Thread_Border_Router` setup.
+ * Start the Thread Network as Mentioned in the Thread Border Router Example.	
  * On cli node by using dwcoapsend command Push the first integer value to the cloud
 ```bash
 dwcoapsend 45
