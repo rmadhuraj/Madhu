@@ -42,6 +42,7 @@ dwcoapsend 45
 ```
 ## 4. Create a Widget on the web Interface to monitor the interger values
 Go to the Dashboard page.
+
        * Optionally, remove all temporary created widgets by clicking Edit Dashboard.
        * Click Add Widget (+). 
        * Fill in the name of the widget, for example Temperature, choose Thing Resource as a Data Source, and temp as a Resource.
