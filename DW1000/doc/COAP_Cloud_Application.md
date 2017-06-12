@@ -10,14 +10,14 @@ The setup for this example is same as used in the thread border router example(s
 4. Create a widget on the web interface
 5. Testing
 ## 1. Register with cloud (www.things.io)
-    For a detailed description of the sign-up procedure and an introduction to the web interface of thethings.io, complete the steps described in thethings.io Getting Started.
+For a detailed description of the sign-up procedure and an introduction to the web interface of thethings.io, complete the steps described in thethings.io Getting Started.
 ## 2. Create a new product:
-	1. Log in to the main control panel. 
-	2. Go to the Things Manager page. 
-	3. Create a new product. Select Raspberry Pi as Board
-	4. Choose JSON as the data type. 
-	5. Activate the Thing by clicking Activate More Things.
-	6. After the Thing has been activated, copy the related Thing Token.
+	* Log in to the main control panel. 
+	* Go to the Things Manager page. 
+	* Create a new product. Select Raspberry Pi as Board
+	* Choose JSON as the data type. 
+	* Activate the Thing by clicking Activate More Things.
+	* After the Thing has been activated, copy the related Thing Token.
 
 ## 3. Add the token in the CLI source code and recompile the code.
 
