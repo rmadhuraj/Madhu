@@ -1,5 +1,3 @@
-/*TBD for Release*/
-
 # COAP Based Cloud Application:
 Nordic designed simple application to send the integer data to the cloud through nrf52840 radio with the coap support in openthread stack. The same is tested with dw1000 radio and it is successfull. 
 The setup for this example is same as used in the thread border router example(section 4.3) 
