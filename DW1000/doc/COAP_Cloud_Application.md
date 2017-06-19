@@ -39,7 +39,7 @@ COAP=1 ENABLE_DW1000=1 make -f examples/Makefile-nrf52840-dw1000
  * Start the Thread Network as Mentioned in the `Thread Border Router Example`.
  * On cli node by using dwcoapsend command Push the first integer value to the cloud
 ```bash
-dwcoapsend 45
+coapsend 45
 ```
 ## 4. Create a Widget on the web Interface to monitor the interger values
 Go to the Dashboard page.
@@ -53,6 +53,6 @@ Go to the Dashboard page.
 ## 5. Testing:
 Now, from the CLI node by continously using dwcoapsend command you can observe the changes on the web interface .
 ```bash
-dwcoapsend 50
-dwcoapsend 30
+coapsend 50
+coapsend 30
 ```
