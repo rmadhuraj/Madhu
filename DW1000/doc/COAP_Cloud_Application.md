@@ -2,6 +2,8 @@
 COAP Based Cloud Application which will send the integer data to the cloud through dw1000 radio and Nordic Host controller with the coap support in openthread stack.
 The setup for this example is same as defined in the thread border router example.
 
+I have done this changes
+
 Steps to be followed to test the COAP Based Cloud Application is defined as follows.
 1. Register with cloud (things.io)
 2. Create a new Project
